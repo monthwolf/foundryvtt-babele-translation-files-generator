@@ -25,7 +25,11 @@ export class ActorExporter extends AbstractExporter {
         ...Object.values(this.options.customMapping.actor).map((mapping) => mapping.value),
       ],
     });
-
+    if('folders' in this.pack) {
+      for (const folder of this.pack.folders){
+        this.dataset.folders[folder.name] = folder.name;
+      }
+    }
     for (const indexDocument of documents) {
       let documentData = ActorExporter.getDocumentData(
         indexDocument,

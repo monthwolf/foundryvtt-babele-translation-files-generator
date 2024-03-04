@@ -14,7 +14,11 @@ export class ItemExporter extends AbstractExporter {
     const documents = await this.pack.getIndex({
       fields: [...Object.values(this.options.customMapping.item).map((mapping) => mapping.value)],
     });
-
+    if('folders' in this.pack) {
+      for (const folder of this.pack.folders){
+        this.dataset.folders[folder.name] = folder.name;
+      }
+    }
     for (const indexDocument of documents) {
       this.dataset.entries[indexDocument.name] = foundry.utils.mergeObject(
         ItemExporter.getDocumentData(

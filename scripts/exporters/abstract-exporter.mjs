@@ -10,6 +10,7 @@ export class AbstractExporter {
     label: '',
     mapping: {},
     entries: {},
+    folders: {}
   };
   /**
    * @typedef {CompendiumCollection}

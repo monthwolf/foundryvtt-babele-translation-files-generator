@@ -18,7 +18,11 @@ export class PlaylistExporter extends AbstractExporter {
 
   async _processDataset() {
     const documents = await this.pack.getIndex();
-
+    if('folders' in this.pack) {
+      for (const folder of this.pack.folders){
+        this.dataset.folders[folder.name] = folder.name;
+      }
+    }
     for (const indexDocument of documents) {
       this.dataset.entries[indexDocument.name] = foundry.utils.mergeObject(
         PlaylistExporter.getDocumentData(
