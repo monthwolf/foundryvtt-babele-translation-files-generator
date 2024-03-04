@@ -4,6 +4,47 @@ Babele Translation Files Generator
 
 ![Foundry v11](https://img.shields.io/badge/foundry-v11-green)
 
+_（中文）_
+
+该模块允许您生成纲要的JSON翻译文件，以方便实施
+系统和/或模块的翻译。
+
+可以处理任何类型的概要并使用映射定义个性化导出的文件
+Babele（用于“Actor”、“Item”和“Adventure”概要）。
+
+## 更新
+为所有的文件夹添加了映射
+
+## 安装
+
+该系统可以通过搜索其名称“Babele Translation Files Generator”直接从 Foundry 进行安装。
+然后，您将获得最新版本并受益于自动更新。
+
+或者，您可以使用其清单链接添加它：
+`https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/releases/latest/download/module.json`
+
+## 用法
+
+打开概要并单击窗口标题中的下载图标。然后将出现一个配置对话框，允许您开始导出翻译文件。
+还可以通过运行包含以下内容的宏来通过拖放来启动纲要的选择窗口
+
+以下是脚本：`game.babeleFilesGenerator.api.compendiumExporter.selectPack();`
+
+如果您已经有一个翻译文件，您可以选择它来获取一个新的、最新的文件，其中将包含
+您已经完成的翻译以及文件中不存在的任何新翻译。
+最后，一个复选框还允许您生成一个工作 Foundry 模块的示例，该示例允许您
+在世界中快速测试您的翻译文件。
+
+## 如何贡献？
+
+##＃ 错误报告
+
+请在此报告：https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/issues
+
+您还可以通过拉动提出修复建议
+请求：https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/pulls
+
+
 _(English version below)_
 
 ---
