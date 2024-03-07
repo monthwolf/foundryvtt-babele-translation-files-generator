@@ -16,12 +16,8 @@ Babele（用于“Actor”、“Item”和“Adventure”概要）。
 为所有的文件夹添加了映射
 
 ## 安装
-
-该系统可以通过搜索其名称“Babele Translation Files Generator”直接从 Foundry 进行安装。
-然后，您将获得最新版本并受益于自动更新。
-
-或者，您可以使用其清单链接添加它：
-`https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/releases/latest/download/module.json`
+您可以使用其清单链接添加它：
+`https://github.com/monthwolf/foundryvtt-babele-translation-files-generator/releases/latest/download/module.json`
 
 ## 用法
 
@@ -34,15 +30,6 @@ Babele（用于“Actor”、“Item”和“Adventure”概要）。
 您已经完成的翻译以及文件中不存在的任何新翻译。
 最后，一个复选框还允许您生成一个工作 Foundry 模块的示例，该示例允许您
 在世界中快速测试您的翻译文件。
-
-## 如何贡献？
-
-##＃ 错误报告
-
-请在此报告：https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/issues
-
-您还可以通过拉动提出修复建议
-请求：https://github.com/DjLeChuck/foundryvtt-babele-translation-files-generator/pulls
 
 
 _(English version below)_
