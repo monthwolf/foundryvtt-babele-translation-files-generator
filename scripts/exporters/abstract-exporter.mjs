@@ -126,11 +126,11 @@ export class AbstractExporter {
   static _hasContent(dataset) {
     return Array.isArray(dataset) ? dataset.length : dataset.size;
   }
-/*
+
   _getStringifiedDataset() {
     return JSON.stringify(this.dataset, null, 2);
   }
-
+/*
   _downloadFile() {
     ui.notifications.info(game.i18n.localize('BTFG.Exporter.ExportFinished'));
 
