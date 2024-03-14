@@ -126,11 +126,11 @@ export class AbstractExporter {
   static _hasContent(dataset) {
     return Array.isArray(dataset) ? dataset.length : dataset.size;
   }
-
+  
+/*
   _getStringifiedDataset() {
     return JSON.stringify(this.dataset, null, 2);
   }
-/*
   _downloadFile() {
     ui.notifications.info(game.i18n.localize('BTFG.Exporter.ExportFinished'));
 
@@ -176,7 +176,7 @@ export class AbstractExporter {
 
       zip.file(
         `${MODULE_TPL_ID}/compendium/${this.options.translationLocale}/${this.pack.metadata.id}.json`,
-        this._getStringifiedDataset(),
+        JSON.stringify(this.dataset, null, 2),
       );
 
       ui.notifications.info(game.i18n.localize('BTFG.Exporter.ExportFinished'));
